@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @life_event.name
+p
+  strong Date:
+  = @life_event.date
+p
+  strong Description:
+  = @life_event.description
+
+= link_to 'Edit', edit_life_event_path(@life_event)
+'|
+= link_to 'Back', life_events_path

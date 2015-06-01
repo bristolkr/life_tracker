@@ -1,0 +1,25 @@
+h1 Listing life_events
+
+table
+  thead
+    tr
+      th Name
+      th Date
+      th Description
+      th
+      th
+      th
+
+  tbody
+    - @life_events.each do |life_event|
+      tr
+        td = life_event.name
+        td = life_event.date
+        td = life_event.description
+        td = link_to 'Show', life_event
+        td = link_to 'Edit', edit_life_event_path(life_event)
+        td = link_to 'Destroy', life_event, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Life event', new_life_event_path
