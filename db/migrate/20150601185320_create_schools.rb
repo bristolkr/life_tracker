@@ -2,8 +2,8 @@ class CreateSchools < ActiveRecord::Migration
   def change
     create_table :schools do |t|
       t.string :name
-      t.string :startyear
-      t.string :endyear
+      t.integer :startyear
+      t.integer :endyear
 
       t.timestamps null: false
     end
