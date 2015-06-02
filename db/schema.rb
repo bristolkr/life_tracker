@@ -17,17 +17,17 @@ ActiveRecord::Schema.define(version: 20150601185550) do
   enable_extension "plpgsql"
 
   create_table "life_events", force: :cascade do |t|
-    t.string   "name"
-    t.string   "date"
-    t.string   "description"
+    t.string   "Event"
+    t.string   "Year"
+    t.string   "Description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
   create_table "schools", force: :cascade do |t|
-    t.string   "name"
-    t.string   "startyear"
-    t.string   "endyear"
+    t.string   "Name"
+    t.string   "Start Year"
+    t.string   "End Year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

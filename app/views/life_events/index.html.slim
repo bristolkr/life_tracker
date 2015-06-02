@@ -1,10 +1,10 @@
-h1 Listing life_events
+h1 Life Events
 
 table
   thead
     tr
-      th Name
-      th Date
+      th Event
+      th Year
       th Description
       th
       th
@@ -18,8 +18,8 @@ table
         td = life_event.description
         td = link_to 'Show', life_event
         td = link_to 'Edit', edit_life_event_path(life_event)
-        td = link_to 'Destroy', life_event, data: {:confirm => 'Are you sure?'}, :method => :delete
+        td = link_to 'Remove', life_event, data: {:confirm => 'Are you sure?'}, :method => :delete
 
 br
 
-= link_to 'New Life event', new_life_event_path
+= link_to 'New Life Event', new_life_event_path
