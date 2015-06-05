@@ -1,7 +1,3 @@
 class LifeEvent < ActiveRecord::Base
-  # attr_accessor :name, :date, :description
-
-  # validates :name, :presence => true
-  # validates :date, :presence => true
-
+  belongs_to :person
 end
